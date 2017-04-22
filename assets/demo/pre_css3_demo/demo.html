@@ -149,8 +149,13 @@
 <!-- Theme Background Related-->
 
     <style>
-      body{
-        background-image: url(/img/bg.png);
+      body {
+        background-color: undefined;
+      }
+
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text {
+        background-color: #fff;
       }
     </style>
 
@@ -205,6 +210,12 @@
 
 
     <!-- Bing Background -->
+    
+        <script type="text/javascript">
+            queue.offer(function(){
+                $('body').attr('data-original', 'https://api.i-meto.com/bing?null');
+            });
+        </script>
     
 
     <!-- Custom Head -->
@@ -1049,6 +1060,10 @@ It will not impact the appearance and can give developers a lot of support :)
 </script>
 
 
+
+    
+        <script src="/js/smoothscroll.js"></script>
+    
 
 
 
