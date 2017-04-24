@@ -10,7 +10,7 @@
     
     <title>
         
-            留言板 | 
+            baiduCDN | 
         
         毛毛虫儿飞
     </title>
@@ -38,7 +38,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Mr zhang">
     <meta name="description" content="活着就是为了改变世界！">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,-网站建设">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -64,9 +64,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="留言板 | 毛毛虫儿飞">
+    <meta property="og:title" content="baiduCDN | 毛毛虫儿飞">
     <meta property="og:description" content="活着就是为了改变世界！">
-    
+    <meta property="og:article:tag" content="-网站建设"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -235,6 +235,41 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
 
 <!-- Layouts -->
 
@@ -248,11 +283,20 @@
                 
     <!-- Paradox Post Header -->
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/assets/blogImg/1.png)">
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
     
             <p class="article-headline-p">
-                留言板
+                baiduCDN
             </p>
         </div>
 
@@ -271,7 +315,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Mr zhang</strong>
-        <span>4月 22, 2017</span>
+        <span>4月 24, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -292,7 +336,7 @@
         </button>
         <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
             <li class="mdl-menu__item">在其它设备中阅读本文章</li>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACdElEQVR42u3aQW7jMBAEQP//07vXAIGV7qFIK0HpZNixxJIBDdMzr39/+njh4eHh4eHh4eE9jPeKj+9///Wd60/bc87WhoeHh3eS98OjNl7uuyW+u1bCzteGh4eHd57XXuYadv3Qzz9t14aHh4f3NF5eDHLY7Lp4eHh4v4WXvDPcCgfnxMPDw3saL19KEi7koUN73Y1ZCx4eHl7MaxtgJ19/oL+Hh4eHd8mrR5rKplcycJBEusOhKzw8PLwNvHZkKgkg8th3PfIYZi14eHh4C7wkRMjbWm37Px97LQoMHh4e3od47cXa77a3uNi+4+Hh4W3m5cuaDbDONtDtZh0PDw/vPO/6wX0dUhRN/dE4V7sGPDw8vN28Nmho44m8nLRh7tuz4eHh4W3m5UNO+eM7LwP5prz4AfDw8PCO8Nq2/Sw+SAKLdmONh4eH91le8g9/3u5agbXjX3h4eHgneXdFrvc2zGY3Gg8PD+8kr201rTzi84GA2SAXHh4e3kle2/rKC8Dsim1cgoeHh3eGN9y2LgxdzW5EsdHHw8PDO8K7YdRpYROct9yib+Hh4eFt5iVb55VRqpV213CrjYeHh3eEtzJilReY9Ug3aqrh4eHhbea1i85HqdrikZ+tKAx4eHh4G3izIDVqRMULbc/2wwrx8PDwNvNe8bESRiTFZjbwioeHh/cp3kqwOyskbdkYjqvi4eHhbeblUcJKkyxvhg2jDTw8PLyH8drRq3aMIB8XGKbUeHh4eB/lDcOCW2PfjYUBDw8P76YwYiViaIeu8puCh4eHd5633gBbGZxq2111GIGHh4d3K+/vHXh4eHh4eHh4eA84/gMdECsm6SNUVQAAAABJRU5ErkJggg==">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACa0lEQVR42u3aW1LDMBAEwNz/0nCAFGJGL0yq/ZUyTqzWh1aM9vX10dcLDw8PDw8PDw/vYbxXfI2/9X7//fn3z8m36rHh4eHhXeH9stQOhzseyvgt47dPjg0PDw/vIi8ZXLKI/zSIhJ2895dfwMPDw3skb7xAj7e8bbHBw8PD+wze3o04Hh4e3v/lJQNtt9ftFvmPsxY8PDy8mJcfMt3/fPV8Dw8PDy/g1S1NZXtBe2f9wsPDwzvNyxfinN02E8wVBjw8PLy/5bUL9MoS3x6hJZOIh4eHd5OX/HS+3OdDSY6+5g7h8PDw8E7zdrVYtX8db8GXphUPDw/vOi852m+jiuRdc5OFh4eHd59X/JMfLOi7NtwJpmgdwMPDwzvAS1oE5oLX/JAsj0XqrAUPDw9vK6/esC48n8cKeTnBw8PDewKvvRMdSk21cOW/jIeHh3eTlwcBecA6F8XmDQRLTVd4eHh4y7x2y7utqbQ8WltqusLDw8PbymvLQB6tJtM09/zBuoeHh4cX7znXF+g2tmgDkSI4xsPDw7vCWykAeejQHmtNbtbx8PDwLvLyYpAv4nkz1vGsBQ8PD+9wjDvXPpX8zsrUbKt7eHh4eFt57QY6jzPmnqwbtvDw8PAO89orj3GT6Sg2ynmDFx4eHt5h3txyvNKMlZeNbWEEHh4e3gFeWwzmwos2aGijXjw8PLz7vPXDp6QwrBSMqPzg4eHhPZKXxwR581Z+/3hhwMPDwztWGJLn2zsrUS8eHh7efV4SRuQxwYnWBDw8PLzn8NoIoD3an2u6Gk/ZkfM9PDw8vID3eRceHh4eHh4eHt4Drm/zvV3Jc4TlPgAAAABJRU5ErkJggg==">
         </ul>
     
 
@@ -304,7 +348,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/网站建设/">-网站建设</a>
     </ul>
     
 
@@ -318,7 +362,7 @@
     <!-- Leancloud Views -->
         <a class="post_share-link" href="#">
             <li class="mdl-menu__item">
-                <span id="/communication/index.html" class="leancloud-views_num" data-flag-title="留言板">
+                <span id="/2017/04/24/baiduCDN/" class="leancloud-views_num" data-flag-title="baiduCDN">
      &nbsp;浏览量
 </span>
 
@@ -330,7 +374,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=留言板&url=http://yoursite.com//communication/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=baiduCDN&url=http://yoursite.com//2017/04/24/baiduCDN/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -339,7 +383,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=留言板&url=http://yoursite.com//communication/index.html&via=Mr zhang" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=baiduCDN&url=http://yoursite.com//2017/04/24/baiduCDN/index.html&via=Mr zhang" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -348,7 +392,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//communication/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/04/24/baiduCDN/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -357,7 +401,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//communication/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/04/24/baiduCDN/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -369,7 +413,7 @@
 
     <!-- Share QQ -->
     
-        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=毛毛虫儿飞&title=留言板&summary=活着就是为了改变世界！&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/communication/index.html" target="_blank">
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=毛毛虫儿飞&title=baiduCDN&summary=活着就是为了改变世界！&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2017/04/24/baiduCDN/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 QQ
             </li>
@@ -387,13 +431,9 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p><img src="../assets/zyimg/commication.png" alt="留言专用"> </p>
-<p>#欢迎交流编程技术和生活趣事<br><br><br></p>
-<blockquote>
-<p>赠给我们IT界的几条理智名言：<br><br>1.阿里巴巴董事长马云      　　                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     语录：我用望远镜也找不到竞争对手<br><br>2.原微软大中华区CEO陈永正           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;语录：我觉得自己还欠微软一年<br><br>3.联想董事会主席杨元庆　　                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：没有人比我们更擅长并购与整合<br><br>4.微软CEO鲍尔默　　                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：谷歌经常阅读用户的电子邮件，而我们不会这样做<br><br>5.AMD CEO鲁毅智　　                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 语录：英特尔抄袭我们5年 涵盖所有新技术<br><br>6.巨人CEO史玉柱　　                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：我的成功不是靠忽悠<br><br>7.狐CEO张朝阳　　                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：我向毛主席发誓，向天发誓，搜狐绝对没有作弊<br><br>8.重装系统后的网友　　                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：烧香的不一定是和尚，还可能是熊猫…<br><br>9.神舟董事长吴海军　&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：不买神舟电脑的人就是被猪宰!<br><br>10.谷歌大中华区总裁李开复　    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;语录：谷歌有5000年耐心赢取zg市场成功<br></p>
-</blockquote>
-<p><br></p>
-<p>####欢迎在下方留言!</p>
+        <p>#利用百度免费CDN对网站进行加速</p>
+<p><a href="https://su.baidu.com/" target="_blank" rel="external">百度云加速</a> ，点击进入官网</p>
+<p>1.登陆帐号<br>2.输入要加速的网站域名，比如我的是520jzz.top<strong>ps:未备案的域名不能使用</strong><br>3.选择接入方式，这里选择CNAME<br>4.添加子域名<br><img src="/mnt/bd2d7f37-64c1-4fd4-8470-38e6e4ee857e/mmcef/source/assets/zyimg/cdn.png" alt="cdn" title="cdn"><br>5.然后点下一步，就会生成两个cname别名，我的是<br>×www.520jzz.top.cname.yunjiasu-cdn.net<br>×520jzz.top.cname.yunjiasu-cdn.net<br>6.然后到域名 注册商那去改解析<br><img src="/mnt/bd2d7f37-64c1-4fd4-8470-38e6e4ee857e/mmcef/source/assets/zyimg/jiexi.png" alt="解析" title="解析"><br>7.改好就成功了<br>8.可以ping下延迟测试是否成功，百度大概有12个节点，在几个省的ip是不同的</p>
 
     
 
@@ -411,7 +451,7 @@
     <!-- 使用 changyan -->
     <div id="changyan-comment">
         <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="communication/index.html"  ></div>
+<div id="SOHUCS" sid="2017/04/24/baiduCDN/"  ></div>
 <script type="text/javascript">
 (function(){
 var appid = 'cysX8Jg94';
@@ -439,6 +479,14 @@ window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="tex
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2017/04/21/jiaocheng-hexo/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->
@@ -671,6 +719,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
