@@ -6,7 +6,11 @@
       <title><![CDATA[利用百度免费CDN对网站进行加速]]></title>
       <url>/2017/04/24/baiduCDN/</url>
       <content type="html"><![CDATA[<p><a href="https://su.baidu.com/" target="_blank" rel="external">百度云加速</a> ，点击进入官网</p>
-<p>1.登陆帐号<br>2.输入要加速的网站域名，比如我的是520jzz.top<strong>ps:未备案的域名不能使用</strong><br>3.选择接入方式，这里选择CNAME<br>4.添加子域名<br><img src="/assets/zyimg/cdn.png" alt="cdn" title="cdn"><br>5.然后点下一步，就会生成两个cname别名，我的是<br>×www.520jzz.top.cname.yunjiasu-cdn.net<br>×520jzz.top.cname.yunjiasu-cdn.net<br>6.然后到域名 注册商那去改解析<br><img src="/assets/zyimg/jiexi.png" alt="解析" title="解析"><br>7.改好就成功了<br>8.可以ping下延迟测试是否成功，百度大概有12个节点，在几个省的ip是不同的</p>
+<p>1.登陆帐号<br>2.输入要加速的网站域名，比如我的是520jzz.top<br>  &nbsp;  &nbsp;<strong>ps:未备案的域名不能使用</strong><br>3.选择接入方式，这里选择CNAME<br>4.添加子域名<br><img src="/assets/zyimg/cdn.png" alt="cdn" title="cdn"><br>5.然后点下一步，就会生成两个cname别名，我的是</p>
+<ul>
+<li>www.520jzz.top.cname.yunjiasu-cdn.net</li>
+<li>520jzz.top.cname.yunjiasu-cdn.net<br>6.然后到域名 注册商那去改解析<br><img src="/assets/zyimg/jiexi.png" alt="解析" title="解析"><br>7.改好就成功了<br>8.可以ping下延迟测试是否成功，百度大概有12个节点，在几个省的ip是不同的</li>
+</ul>
 ]]></content>
       
         
